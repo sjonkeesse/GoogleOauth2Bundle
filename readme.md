@@ -1,7 +1,7 @@
 ![screenshot](https://puu.sh/uqV7J/6552dbe827.png)
 
 ## Todo
-[ ] Check invalid refresh token response for when permission is retracted
+`[ ]` Check invalid refresh token response for when permission is retracted
 
 ## Installation
 
