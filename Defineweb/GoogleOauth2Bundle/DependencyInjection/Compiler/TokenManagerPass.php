@@ -29,3 +29,4 @@ class TokenManagerPass implements CompilerPassInterface
             new Reference(array_keys($taggedServices)[0])
         ]);
     }
+}
