@@ -51,7 +51,7 @@ class OAuthController extends Controller
             ]);
         }
 
-        return $this->redirectToRoute('google_oauth_status');
+        return $this->redirectToRoute('google_oauth2_status');
     }
 
 }

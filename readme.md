@@ -1,5 +1,8 @@
 ![screenshot](https://puu.sh/uqV7J/6552dbe827.png)
 
+## Todo
+[] Check invalid refresh token response for when permission is retracted
+
 ## Installation
 
 1. Enable the bundle
@@ -31,7 +34,7 @@ google_oauth2:
     app_id:          %google_app_id%
     app_secret:      %google_app_secret%
     hosted_domain:   %google_hosted_domain% 
-    redirect_uri:    google_oauth_callback  # Url or route id
+    redirect_uri:    google_oauth2_callback  # Url or route id
     scope:
         - https://www.googleapis.com/auth/cloudprint
         # Available scopes: https://developers.google.com/identity/protocols/googlescopes
@@ -55,7 +58,7 @@ Import routing using yml:
 ``` yaml
 # app/config/routing.yml
 
-# Optional
+# Optional status route
 google_oauth2_status:
     path: /google-oauth/status
     defaults:
@@ -68,7 +71,7 @@ google_oauth2:
 Using xml:
 ``` xml
 <!-- app/config/routing.xml -->
-<!-- Optional -->
+<!-- Optional status route -->
 <route id="google_oauth_status" path="/google-oauth/status">
     <default key="_controller">GoogleOauth2Bundle:OAuth:status</default>
 </route>

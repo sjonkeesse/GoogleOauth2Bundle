@@ -6,7 +6,7 @@
     <strong>Refresh Token:</strong> {% if refreshToken %}{{ refreshToken.token }}{% else %}There is no refresh token{% endif %}<br />
     <br />
     {% if refreshToken %}
-        <a href="{{ path('google_oauth_refresh_access_token') }}" title="Renew Access Token using Refresh Token" class="btn btn-primary"><i class="fa fa-refresh"></i> Renew Access Token</a>
+        <a href="{{ path('google_oauth2_refresh_access_token') }}" title="Renew Access Token using Refresh Token" class="btn btn-primary"><i class="fa fa-refresh"></i> Renew Access Token</a>
     {% else %}
         <a href="{{ authorizeUrl }}" title="Authorize with Google" class="btn btn-primary"><i class="fa fa-google"></i> Authorize</a>
     {% endif %}

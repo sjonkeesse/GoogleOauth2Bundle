@@ -27,6 +27,6 @@ class RedirectController extends Controller
 
         $manager->exchangeCodeForToken($request->get('code'));
 
-        return $this->redirectToRoute('google_oauth_status');
+        return $this->redirectToRoute('google_oauth2_status');
     }
 }
