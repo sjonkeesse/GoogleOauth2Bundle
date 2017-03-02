@@ -206,6 +206,7 @@ class TokenProvider implements TokenProviderInterface
         return new RefreshToken();
     }
 }
+```
 
 Register this TokenProvider as a service with a `google_oauth2.token_provider` tag
 
