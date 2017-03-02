@@ -1,3 +1,5 @@
+![screenshot](https://puu.sh/uqV7J/6552dbe827.png)
+
 ## Installation
 
 1. Enable the bundle
@@ -206,6 +208,7 @@ class TokenProvider implements TokenProviderInterface
 }
 
 Register this TokenProvider as a service with a `google_oauth2.token_provider` tag
+
 ``` xml
 <service id="app.provider.token" class="Acme\AppBundle\Provider\TokenProvider">
     <argument type="service" id="doctrine.orm.entity_manager"/>
