@@ -12,6 +12,5 @@
         "php": ">=5.3.3",
         "symfony/symfony": "2.6.*",
         "league/oauth2-google": "^2.0"
-    },
-    "minimum-stability": "stable"
+    }
 }
