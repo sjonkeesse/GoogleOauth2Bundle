@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="league_oauth2.client.google_provider.class">League\OAuth2\Client\Provider\Google</parameter>
+        <parameter key="google_oauth2.provider.url.class">Defineweb\GoogleOauth2Bundle\Provider\UrlProvider</parameter>
+        <parameter key="google_oauth2.manager.token.class">Defineweb\GoogleOauth2Bundle\Manager\TokenManager</parameter>
+    </parameters>
+
+    <services>
+        <service id="league_oauth2.client.google_provider" class="%league_oauth2.client.google_provider.class%">
+            <argument type="collection">
+                <argument key="clientId">%google_oauth2.app_id%</argument>
+                <argument key="clientSecret">%google_oauth2.app_secret%</argument>
+                <argument key="hostedDomain">%google_oauth2.hosted_domain%</argument>
+                <argument key="accessType">%google_oauth2.access_type%</argument>
+            </argument>
+        </service>
+
+        <service id="google_oauth2.provider.url" class="%google_oauth2.provider.url.class%">
+            <argument type="service" id="league_oauth2.client.google_provider"/>
+            <argument type="service" id="router"/>
+            <argument type="collection">
+                <argument key="client_id">%google_oauth2.app_id%</argument>
+                <argument key="scope">%google_oauth2.scope%</argument>
+                <argument key="redirect_uri">%google_oauth2.redirect_uri%</argument>
+            </argument>
+        </service>
+
+        <service id="google_oauth2.manager.token" class="%google_oauth2.manager.token.class%">
+            <argument type="service" id="doctrine.orm.entity_manager"/>
+            <argument type="service" id="league_oauth2.client.google_provider"/>
+            <argument type="service" id="google_oauth2.provider.url"/>
+        </service>
+    </services>
+</container>

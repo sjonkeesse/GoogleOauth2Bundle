@@ -1,0 +1,6 @@
+<h1>Tokens information</h1>
+{% if refreshToken is defined %}
+    Refresh token: {{ refreshToken.token }}<br />
+{% endif %}
+Access token: {{ accessToken.token }}<br />
+Token expires: {{ accessToken.expiresAt }}

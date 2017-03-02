@@ -1,0 +1,17 @@
+{
+    "name": "defineweb/google-oauth2",
+    "license": "MIT",
+    "type": "library",
+    "description": "Simple Google oAuth2 bundle",
+    "autoload": {
+        "psr-0": {
+            "Defineweb\\GoogleOauth2Bundle": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": "2.6.*",
+        "composer require league/oauth2-google": "^2.0"
+    },
+    "minimum-stability": "stable"
+}

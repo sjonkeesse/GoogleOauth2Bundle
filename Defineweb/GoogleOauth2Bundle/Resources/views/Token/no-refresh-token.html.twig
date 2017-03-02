@@ -1,0 +1,10 @@
+{% extends '@GoogleOauth2/base.html.twig' %}
+
+{% block content %}
+    <h1>There is no Refresh Token</h1>
+    <a href="{{ authorizeUrl }}" title="Authirize by Google" class="btn btn-primary">Authorize</a>
+    <br />
+    <strong>Authorize url:</strong> <i>{{ authorizeUrl}}</i><br />
+{% endblock %}
+
+

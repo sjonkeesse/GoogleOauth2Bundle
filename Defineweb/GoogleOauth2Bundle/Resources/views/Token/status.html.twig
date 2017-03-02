@@ -1,0 +1,25 @@
+{% extends '@GoogleOauth2/base.html.twig' %}
+
+{% block content %}
+    <h1>Google OAuth status</h1>
+    <strong>Access Token:</strong> {% if accessToken %}{{ accessToken.token }}{% else %}There is no access token{% endif %}<br />
+    <strong>Refresh Token:</strong> {% if refreshToken %}{{ refreshToken.token }}{% else %}There is no refresh token{% endif %}<br />
+    <br />
+    {% if refreshToken %}
+        <a href="{{ path('google_oauth_refresh_access_token') }}" title="Renew Access Token using Refresh Token" class="btn btn-primary"><i class="fa fa-refresh"></i> Renew Access Token</a>
+    {% else %}
+        <a href="{{ authorizeUrl }}" title="Authorize with Google" class="btn btn-primary"><i class="fa fa-google"></i> Authorize</a>
+    {% endif %}
+    <a href="https://myaccount.google.com/permissions" class="btn btn-default" target="_blank" title="Authirize by Google"><i class="fa fa-sign-out"></i> De-authorize</a>
+    <br />
+    <br />
+    <strong>Authorize url:</strong> <i>{{ authorizeUrl}}</i><br />
+    <strong>Google Permissions:</strong> <i>https://myaccount.google.com/permissions</i>
+    <br />
+    <br />
+    <div class="alert alert-info" role="alert">
+        The Refresh Token is only returned the first time the user authorizes by Google. <br/>If you have lost the Refres Token, retract the permission for this app in <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.
+    </div
+{% endblock %}
+
+
