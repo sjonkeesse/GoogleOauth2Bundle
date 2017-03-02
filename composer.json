@@ -1,7 +1,7 @@
 {
     "name": "defineweb/google-oauth2",
     "license": "MIT",
-    "type": "library",
+    "type": "symfony-bundle",
     "description": "Simple Google oAuth2 bundle",
     "authors": [
         {
@@ -19,6 +19,5 @@
         "php": ">=5.3.3",
         "symfony/symfony": "2.*",
         "league/oauth2-google": "^2.0"
-    },
-    "minimum-stability": "dev"
+    }
 }
