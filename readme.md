@@ -11,7 +11,11 @@
 4. Extend AccessToken and RefreshToken with custom properties
 5. Create TokenProvider
 
-### Step 1: Enable the bundle
+### Step 1: Install / enable the bundle
+
+``` sh
+php app/console cache:clear
+```
 
 ``` php
 <?php
