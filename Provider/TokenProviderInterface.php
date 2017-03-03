@@ -1,9 +1,9 @@
 <?php
 
-namespace Defineweb\GoogleOauth2Bundle\Provider;
+namespace Defineweb\Bundle\GoogleOauth2Bundle\Provider;
 
-use Defineweb\GoogleOauth2Bundle\Model\AccessTokenInterface;
-use Defineweb\GoogleOauth2Bundle\Model\RefreshTokenInterface;
+use Defineweb\Bundle\GoogleOauth2Bundle\Model\AccessTokenInterface;
+use Defineweb\Bundle\GoogleOauth2Bundle\Model\RefreshTokenInterface;
 
 /**
  * @author Robin Jansen <robinjansen51@gmail.com>

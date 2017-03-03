@@ -6,8 +6,8 @@
 
     <parameters>
         <parameter key="league_oauth2.client.google_provider.class">League\OAuth2\Client\Provider\Google</parameter>
-        <parameter key="google_oauth2.provider.url.class">Defineweb\GoogleOauth2Bundle\Provider\UrlProvider</parameter>
-        <parameter key="google_oauth2.manager.token.class">Defineweb\GoogleOauth2Bundle\Manager\TokenManager</parameter>
+        <parameter key="google_oauth2.provider.url.class">Defineweb\Bundle\GoogleOauth2Bundle\Provider\UrlProvider</parameter>
+        <parameter key="google_oauth2.manager.token.class">Defineweb\Bundle\GoogleOauth2Bundle\Manager\TokenManager</parameter>
     </parameters>
 
     <services>

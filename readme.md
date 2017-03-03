@@ -21,7 +21,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new Defineweb\GoogleOauth2Bundle\GoogleOauth2Bundle(),
+        new Defineweb\Bundle\GoogleOauth2Bundle\GoogleOauth2Bundle(),
     );
 }
 ```
@@ -86,7 +86,7 @@ Using xml:
 
 namespace Acme\AppBundle\Entity;
 
-use Defineweb\GoogleOauth2Bundle\Entity\AccessToken as BaseAccessToken;
+use Defineweb\Bundle\GoogleOauth2Bundle\Entity\AccessToken as BaseAccessToken;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -114,7 +114,7 @@ class AccessToken extends BaseAccessToken
 
 namespace Acme\AppBundle\Entity;
 
-use Defineweb\GoogleOauth2Bundle\Entity\RefreshToken as BaseRefreshToken;
+use Defineweb\Bundle\GoogleOauth2Bundle\Entity\RefreshToken as BaseRefreshToken;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -144,7 +144,7 @@ namespace Acme\AppBundle\Provider;
 
 use Acme\AppBundle\Entity\AccessToken;
 use Acme\AppBundle\Entity\RefreshToken;
-use Defineweb\GoogleOauth2Bundle\Provider\TokenProviderInterface;
+use Defineweb\Bundle\GoogleOauth2Bundle\Provider\TokenProviderInterface;
 use Doctrine\ORM\EntityManager;
 
 class TokenProvider implements TokenProviderInterface

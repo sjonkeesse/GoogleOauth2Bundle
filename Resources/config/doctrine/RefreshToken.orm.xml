@@ -4,7 +4,7 @@
                   xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
                   http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
 
-    <mapped-superclass name="Defineweb\GoogleOauth2Bundle\Entity\RefreshToken">
+    <mapped-superclass name="Defineweb\Bundle\GoogleOauth2Bundle\Entity\RefreshToken">
         <field name="token" column="token" type="string" unique="true" />
         <field name="scope" column="scope" type="string" nullable="true" />
     </mapped-superclass>

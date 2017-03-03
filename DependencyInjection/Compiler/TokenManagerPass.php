@@ -1,6 +1,6 @@
 <?php
 
-namespace Defineweb\GoogleOauth2Bundle\DependencyInjection\Compiler;
+namespace Defineweb\Bundle\GoogleOauth2Bundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

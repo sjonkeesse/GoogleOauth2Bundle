@@ -1,8 +1,8 @@
 <?php
 
-namespace Defineweb\GoogleOauth2Bundle;
+namespace Defineweb\Bundle\GoogleOauth2Bundle;
 
-use Defineweb\GoogleOauth2Bundle\DependencyInjection\Compiler\TokenManagerPass;
+use Defineweb\Bundle\GoogleOauth2Bundle\DependencyInjection\Compiler\TokenManagerPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

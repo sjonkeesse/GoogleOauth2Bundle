@@ -1,6 +1,6 @@
 <?php
 
-namespace Defineweb\GoogleOauth2Bundle\Model;
+namespace Defineweb\Bundle\GoogleOauth2Bundle\Model;
 
 /**
  * @author Robin Jansen <robinjansen51@gmail.com>

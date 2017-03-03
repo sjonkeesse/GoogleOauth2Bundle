@@ -1,6 +1,6 @@
 <?php
 
-namespace Defineweb\GoogleOauth2Bundle\DependencyInjection;
+namespace Defineweb\Bundle\GoogleOauth2Bundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

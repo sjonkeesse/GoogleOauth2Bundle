@@ -1,11 +1,11 @@
 <?php
 
-namespace Defineweb\GoogleOauth2Bundle\Manager;
+namespace Defineweb\Bundle\GoogleOauth2Bundle\Manager;
 
-use Defineweb\GoogleOauth2Bundle\Model\AccessTokenInterface;
-use Defineweb\GoogleOauth2Bundle\Model\RefreshTokenInterface;
-use Defineweb\GoogleOauth2Bundle\Provider\TokenProviderInterface;
-use Defineweb\GoogleOauth2Bundle\Provider\UrlProviderInterface;
+use Defineweb\Bundle\GoogleOauth2Bundle\Model\AccessTokenInterface;
+use Defineweb\Bundle\GoogleOauth2Bundle\Model\RefreshTokenInterface;
+use Defineweb\Bundle\GoogleOauth2Bundle\Provider\TokenProviderInterface;
+use Defineweb\Bundle\GoogleOauth2Bundle\Provider\UrlProviderInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use League\OAuth2\Client\Provider\Google;
 use League\OAuth2\Client\Token\AccessToken;
@@ -57,7 +57,7 @@ class TokenManager implements TokenManagerInterface
     }
 
     /**
-     * @return \Defineweb\GoogleOauth2Bundle\Model\AccessTokenInterface
+     * @return \Defineweb\Bundle\GoogleOauth2Bundle\Model\AccessTokenInterface
      */
     public function getAccessToken()
     {
@@ -96,7 +96,7 @@ class TokenManager implements TokenManagerInterface
     }
 
     /**
-     * @return \Defineweb\GoogleOauth2Bundle\Model\AccessTokenInterface
+     * @return \Defineweb\Bundle\GoogleOauth2Bundle\Model\AccessTokenInterface
      */
     public function createAccessToken()
     {

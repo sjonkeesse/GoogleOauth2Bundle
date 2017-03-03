@@ -1,6 +1,6 @@
 <?php
 
-namespace Defineweb\GoogleOauth2Bundle\Provider;
+namespace Defineweb\Bundle\GoogleOauth2Bundle\Provider;
 
 use League\OAuth2\Client\Provider\Google;
 use Symfony\Component\OptionsResolver\Options;
