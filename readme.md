@@ -70,6 +70,7 @@ google_oauth2_status:
     
 google_oauth2:
     resource: "@GoogleOauth2Bundle/Resources/config/routing.xml"
+    prefix: /google-oauth
     
 ```
 Using xml:

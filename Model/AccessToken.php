@@ -62,7 +62,7 @@ abstract class AccessToken implements AccessTokenInterface
     public function hasExpired()
     {
         if ($this->expiresAt) {
-            return time() > $this->expiresAt;
+            return time() > $this->expiresAt - 10;
         }
 
         return false;

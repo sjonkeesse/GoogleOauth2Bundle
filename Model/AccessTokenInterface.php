@@ -23,6 +23,11 @@ interface AccessTokenInterface
     public function hasExpired();
 
     /**
+     * @return string
+     */
+    public function getToken();
+
+    /**
      * @param string $token
      */
     public function setToken($token);
